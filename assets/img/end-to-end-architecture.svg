@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1100" height="420" viewBox="0 0 1100 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="End-to-end system architecture diagram">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #111827; }
+      .label { font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #111827; }
+      .small { font: 500 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #374151; }
+      .box { fill: #ffffff; stroke: #111827; stroke-width: 2; rx: 14; }
+      .subbox { fill: #f9fafb; stroke: #111827; stroke-width: 1.5; rx: 12; }
+      .arrow { stroke: #111827; stroke-width: 2.2; fill: none; }
+      .dash { stroke-dasharray: 7 6; }
+    </style>
+
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111827"/>
+    </marker>
+
+    <marker id="arrowheadLight" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111827"/>
+    </marker>
+  </defs>
+
+  <text x="28" y="42" class="title">End-to-End System</text>
+
+  <!-- Device Firmware -->
+  <rect x="40" y="95" width="300" height="240" class="box"/>
+  <text x="70" y="130" class="label">Device Firmware</text>
+  <text x="70" y="160" class="small">- Stores and validates configuration</text>
+  <text x="70" y="182" class="small">- Exposes USB/Serial config interface</text>
+  <text x="70" y="204" class="small">- Supports read-back verification</text>
+  <text x="70" y="226" class="small">- Optional telemetry (health/logs)</text>
+
+  <!-- Tooling -->
+  <rect x="400" y="95" width="320" height="240" class="box"/>
+  <text x="430" y="130" class="label">Config Tooling (CLI/GUI)</text>
+  <text x="430" y="160" class="small">- Read current config</text>
+  <text x="430" y="182" class="small">- Stage edits / apply presets</text>
+  <text x="430" y="204" class="small">- Program device</text>
+  <text x="430" y="226" class="small">- Verify by re-reading + compare</text>
+
+  <!-- Presets sub-box -->
+  <rect x="430" y="255" width="260" height="60" class="subbox"/>
+  <text x="448" y="282" class="small">Presets: YAML/JSON</text>
+  <text x="448" y="303" class="small">Repeatable batches + manufacturing</text>
+
+  <!-- Cloud -->
+  <rect x="780" y="80" width="280" height="160" class="box"/>
+  <text x="810" y="115" class="label">Cloud API / Device Shadow</text>
+  <text x="810" y="145" class="small">- Desired vs reported state</text>
+  <text x="810" y="167" class="small">- History + audit trail</text>
+  <text x="810" y="189" class="small">- Optional log uploads</text>
+
+  <!-- Dashboard -->
+  <rect x="780" y="260" width="280" height="150" class="box"/>
+  <text x="810" y="295" class="label">Dashboard</text>
+  <text x="810" y="325" class="small">- Generate presets / release bundles</text>
+  <text x="810" y="347" class="small">- Fleet status and configuration diff</text>
+  <text x="810" y="369" class="small">- Traceability + support workflows</text>
+
+  <!-- Arrows -->
+  <!-- Firmware <-> Tooling (USB/Serial) -->
+  <path d="M340 175 C 370 175, 370 175, 400 175" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M400 205 C 370 205, 370 205, 340 205" class="arrow" marker-end="url(#arrowhead)"/>
+  <text x="355" y="165" class="small">USB / Serial</text>
+
+  <!-- Tooling -> Cloud (HTTPS) -->
+  <path d="M720 165 C 750 165, 750 165, 780 165" class="arrow" marker-end="url(#arrowhead)"/>
+  <text x="735" y="155" class="small">HTTPS</text>
+
+  <!-- Dashboard <-> Cloud -->
+  <path d="M920 240 C 920 250, 920 250, 920 260" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M960 260 C 960 250, 960 250, 960 240" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Firmware -> Cloud (optional telemetry) -->
+  <path d="M300 95 C 520 20, 650 20, 780 110" class="arrow dash" marker-end="url(#arrowheadLight)"/>
+  <text x="430" y="60" class="small">Optional telemetry (MQTT/HTTPS)</text>
+</svg>

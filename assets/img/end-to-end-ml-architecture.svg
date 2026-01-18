@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="520" viewBox="0 0 1400 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Representative end-to-end ML system (sanitized)">
+  <defs>
+    <style>
+      .title { font: 700 22px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #111827; }
+      .h { font: 700 14px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #111827; }
+      .t { font: 500 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #374151; }
+      .box { fill: #ffffff; stroke: #111827; stroke-width: 2; rx: 14; }
+      .arrow { stroke: #111827; stroke-width: 2.2; fill: none; }
+      .dash { stroke-dasharray: 7 6; }
+    </style>
+
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111827"/>
+    </marker>
+  </defs>
+
+  <text x="32" y="44" class="title">End-to-End System (Sanitized)</text>
+
+  <!-- Top row boxes -->
+  <!-- Data Source -->
+  <rect x="40" y="90" width="300" height="170" class="box"/>
+  <text x="64" y="122" class="h">Data Source</text>
+  <text x="64" y="146" class="t">
+    <tspan x="64" dy="0">- Physiological time-series signals</tspan>
+    <tspan x="64" dy="18">- Device identifiers anonymized</tspan>
+    <tspan x="64" dy="18">- Optional basic sanity checks</tspan>
+  </text>
+
+  <!-- Ingestion + Preprocess -->
+  <rect x="380" y="90" width="320" height="170" class="box"/>
+  <text x="404" y="122" class="h">Ingestion + Preprocessing</text>
+  <text x="404" y="146" class="t">
+    <tspan x="404" dy="0">- Collect + timestamp + buffer</tspan>
+    <tspan x="404" dy="18">- Signal quality gates</tspan>
+    <tspan x="404" dy="18">- Windowing + filtering</tspan>
+    <tspan x="404" dy="18">- Feature extraction (generalized)</tspan>
+  </text>
+
+  <!-- Inference -->
+  <rect x="740" y="90" width="300" height="170" class="box"/>
+  <text x="764" y="122" class="h">Model Inference</text>
+  <text x="764" y="146" class="t">
+    <tspan x="764" dy="0">- Load versioned model artifact</tspan>
+    <tspan x="764" dy="18">- Predict metric + confidence</tspan>
+    <tspan x="764" dy="18">- Optional output smoothing</tspan>
+  </text>
+
+  <!-- Dashboard -->
+  <rect x="1080" y="90" width="300" height="170" class="box"/>
+  <text x="1104" y="122" class="h">Dashboard / QA View</text>
+  <text x="1104" y="146" class="t">
+    <tspan x="1104" dy="0">- Live signal quality + results</tspan>
+    <tspan x="1104" dy="18">- Trends, sessions, exports</tspan>
+    <tspan x="1104" dy="18">- Sanitized reporting</tspan>
+  </text>
+
+  <!-- Bottom row boxes -->
+  <!-- Training -->
+  <rect x="380" y="310" width="320" height="150" class="box"/>
+  <text x="404" y="342" class="h">Training Pipeline (Offline)</text>
+  <text x="404" y="366" class="t">
+    <tspan x="404" dy="0">- Curate dataset (sanitized)</tspan>
+    <tspan x="404" dy="18">- Train + evaluate</tspan>
+    <tspan x="404" dy="18">- Produce model artifact</tspan>
+  </text>
+
+  <!-- Model Artifact / Registry -->
+  <rect x="740" y="310" width="300" height="150" class="box"/>
+  <text x="764" y="342" class="h">Model Artifact (Versioned)</text>
+  <text x="764" y="366" class="t">
+    <tspan x="764" dy="0">- Model + metadata</tspan>
+    <tspan x="764" dy="18">- Reproducible versions</tspan>
+    <tspan x="764" dy="18">- Promotion to inference</tspan>
+  </text>
+
+  <!-- Arrows (top flow) -->
+  <path d="M340 175 L380 175" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M700 175 L740 175" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M1040 175 L1080 175" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <text x="350" y="162" class="t">Local / wireless link</text>
+  <text x="710" y="162" class="t">Features</text>
+  <text x="1050" y="162" class="t">Results</text>
+
+  <!-- Bottom flow -->
+  <path d="M700 385 L740 385" class="arrow" marker-end="url(#arrowhead)"/>
+  <text x="710" y="372" class="t">Export</text>
+
+  <!-- Promotion (dashed) -->
+  <path d="M890 310 L890 260" class="arrow dash" marker-end="url(#arrowhead)"/>
+  <text x="905" y="292" class="t">Deploy</text>
+</svg>

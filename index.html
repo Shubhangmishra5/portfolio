@@ -1,0 +1,1212 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shubhang Mishra | Embedded Systems | IoT | Firmware | ML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Shubhang Mishra - Embedded Systems & IoT Engineer (Zephyr/nRF52840, BLE, STM32/ESP32/Raspberry Pi) with circuit design, hardware debugging, dashboards, ML, and prompt engineering experience." />
+  <meta name="author" content="Shubhang Mishra" />
+  <meta name="robots" content="index,follow" />
+  <meta name="keywords" content="embedded firmware engineer, embedded systems, IoT, Zephyr, nRF52840, BLE, STM32, ESP32, Raspberry Pi, hardware debugging, dashboards, Python tooling, prompt engineering" />
+
+  <!-- Social -->
+  <meta property="og:title" content="Shubhang Mishra | Embedded Systems | IoT | Firmware | ML" />
+  <meta property="og:description" content="Embedded firmware (Zephyr/nRF52840), BLE sensor platforms, STM32/ESP32/RPi, circuit design & debugging, dashboards, ML and prompt engineering." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta property="og:image:alt" content="Shubhang Mishra portfolio preview" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shubhang Mishra | Embedded Systems | IoT | Firmware | ML" />
+  <meta name="twitter:description" content="Embedded firmware (Zephyr/nRF52840), BLE sensor platforms, STM32/ESP32/RPi, circuit design & debugging, dashboards, ML and prompt engineering." />
+  <meta name="twitter:image" content="assets/img/og-cover.png" />
+  <meta name="twitter:image:alt" content="Shubhang Mishra portfolio preview" />
+
+  <meta name="theme-color" content="#020617" />
+  <link rel="icon" type="image/png" href="assets/img/sm-logo.svg" />
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function () {
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        } else {
+          const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SxXqfLxj7S3tXcEPHhQ+ykC9y4s6qd24CfYo2P5vU0Zq+fC7Q5iG+i+gF+k4jQsxYy2dC9qfgF4h+JfIFpcT9g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shubhang Mishra",
+    "jobTitle": "Embedded Systems & IoT Engineer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Greater Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "email": "mailto:shubhangmishra5@gmail.com",
+    "telephone": "+91-7654025369",
+    "sameAs": [
+      "https://www.linkedin.com/in/shubhang-mishra-b7b1181b2",
+      "https://github.com/Shubhangmishra5",
+      "https://twitter.com/shubhan48963457"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header id="header">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="assets/img/sm-logo.svg" alt="" width="24" height="24" />
+        </div>
+        <div class="brand-text">
+          <span>Shubhang Mishra</span>
+          <span>Embedded &middot; IoT &middot; Firmware &middot; ML</span>
+        </div>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <ul id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-icon" id="theme-toggle" type="button" aria-label="Switch theme" title="Toggle theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+
+        <a
+          class="nav-cta"
+          href="https://www.linkedin.com/in/shubhang-mishra-b7b1181b2"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="assets/img/linkedin.png" alt="" class="icon-img" width="18" height="18" />
+          Open to Opportunities
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle" type="button">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <a class="mobile-cta" href="#contact" aria-label="Contact Shubhang">
+    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+    Contact
+  </a>
+
+  <a
+    class="coffee-fab"
+    href="https://buymeacoffee.com/shubhangmiz"
+    aria-label="Buy me a coffee (buymeacoffee.com/shubhangmiz)"
+    title="Buy me a coffee (buymeacoffee.com/shubhangmiz)"
+  >
+    <img
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 11c0-3 10-5 20-5 6.5 0 11 1.2 11 4.5V18c0 2.6-2.2 4-6.6 4H25c-4.4 0-7-1.4-7-4Z' fill='none' stroke='%23000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 18h30l-4 34c-.6 5.3-4.2 8-11.9 8h-1.2c-7.7 0-11.3-2.7-11.9-8Z' fill='%23ffd400' stroke='%23000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M47 22c4 0 7-2.5 7-7.4 0-4.9-3-6.6-7-6.6' fill='none' stroke='%23000' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M42.5 6.5c-4.8.6-11 .9-16 .5-6.1-.5-9.2-2.1-9.2-3.5C17.2 1 23.7 0 32 0c8.3 0 14.7 1.1 14.7 3.5 0 1.2-1.4 2.2-4.2 3Z' fill='%23000'/%3E%3C/svg%3E"
+      alt="Buy me a coffee logo"
+      loading="lazy"
+      width="30"
+      height="30"
+    />
+    Buy me a coffee
+  </a>
+
+  <div class="page-shell">
+    <main id="main">
+      <!-- HOME / HERO -->
+      <section id="home" class="hero">
+        <div class="hero-left reveal">
+          <div class="hero-pill">
+            <span><i class="fa-solid fa-microchip" aria-hidden="true"></i></span>
+            Embedded & IoT Engineer &middot; Automation &middot; ML &middot; Prompt Engineering
+          </div>
+
+          <h1 class="hero-title">
+            I build <span>reliable embedded platforms</span> and <span>engineering tools</span> that teams can ship with confidence.
+          </h1>
+
+          <p class="hero-subtitle">
+            Embedded Systems &amp; IoT Engineer focused on Zephyr (nRF52840), BLE sensor pipelines, STM32/ESP32/Raspberry Pi, circuit design &amp; hardware debugging, and Python dashboards + workflow automation for monitoring and ML inference.
+          </p>
+
+          <p class="hero-subtitle-2">
+            I take prototypes to reliable demos: structured acquisition/validation/transport, BLE reconnect logic, debug-friendly logs, and internal tooling that speeds bring-up. Open to embedded firmware + BLE roles (full-time or contract).
+          </p>
+
+          <div class="hero-highlights">
+            <div class="chip">Graduate Engineer Trainee &middot; Morphedo Technologies (R&amp;D &middot; NPD)</div>
+            <div class="chip">nRF52840 &middot; Zephyr RTOS &middot; BLE &middot; SAADC</div>
+            <div class="chip">STM32 &middot; ESP32 &middot; Raspberry Pi &middot; Arduino</div>
+            <div class="chip">Circuit Design &middot; PCB Prototyping &middot; Debugging</div>
+            <div class="chip">PySide6 &middot; PyQt5 &middot; Streamlit</div>
+          </div>
+
+          <div class="snapshot-row">
+            <div class="snapshot">
+              <div class="snapshot-title">Ship-ready</div>
+              <div class="snapshot-value">10-15 prototypes (2023-2025)</div>
+              <div class="snapshot-sub">Sensor platforms, BLE tools, dashboards</div>
+            </div>
+            <div class="snapshot">
+              <div class="snapshot-title">Reliability</div>
+              <div class="snapshot-value">Debug + Hardening</div>
+              <div class="snapshot-sub">Reconnect logic, validation, safe fallbacks</div>
+            </div>
+            <div class="snapshot">
+              <div class="snapshot-title">Tooling impact</div>
+              <div class="snapshot-value">Faster bring-up</div>
+              <div class="snapshot-sub">Internal apps that cut test time &amp; errors</div>
+            </div>
+          </div>
+
+          <div class="hero-cta-row">
+            <a href="#portfolio" class="btn-primary">
+              View Projects
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="./Shubhang_Mishra_Resume.pdf" class="btn-ghost" target="_blank" rel="noreferrer">
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              Download Resume
+            </a>
+
+            <a href="#contact" class="btn-ghost" aria-label="Contact for opportunities">
+              <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+              Book a call
+            </a>
+          </div>
+
+          <div class="key-results">
+            <div class="metric-card">
+              <div class="metric-value">10-15</div>
+              <div class="metric-label">prototypes hardened for demos/labs (2023-2025)</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">Faster</div>
+              <div class="metric-label">bring-up via tooling + checklists</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">Stable</div>
+              <div class="metric-label">field behavior from validation gates</div>
+            </div>
+          </div>
+
+          <div class="logo-cloud" aria-label="Core toolchain">
+            <span class="logo-pill"><i class="fa-brands fa-python" aria-hidden="true"></i>Python</span>
+            <span class="logo-pill"><i class="fa-solid fa-microchip" aria-hidden="true"></i>Zephyr / nRF52</span>
+            <span class="logo-pill"><i class="fa-solid fa-wave-square" aria-hidden="true"></i>BLE / GATT</span>
+            <span class="logo-pill"><i class="fa-brands fa-docker" aria-hidden="true"></i>Docker</span>
+            <span class="logo-pill"><i class="fa-brands fa-linux" aria-hidden="true"></i>Linux</span>
+            <span class="logo-pill"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</span>
+          </div>
+
+          <div class="trusted-row" aria-label="Companies I've worked with">
+            <span class="muted">Trusted by teams at:</span>
+            <div class="logo-cloud">
+              <span class="logo-pill">Morphedo Technologies</span>
+              <span class="logo-pill">Satyam Software Solutions</span>
+              <span class="logo-pill">NewGen IEDC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <article class="profile-card" aria-label="Profile summary">
+            <div class="profile-photo-wrap">
+              <img
+                src="assets/img/Profile_shubhang.jpg"
+                alt="Profile photo of Shubhang Mishra"
+                width="300"
+                height="300"
+                loading="eager"
+              />
+            </div>
+
+            <div class="profile-meta">
+              <h2 class="profile-name">Shubhang Mishra</h2>
+              <p>Noida, Uttar Pradesh, India</p>
+              <div class="profile-tags">
+                <span class="profile-tag">Embedded & IoT Engineer</span>
+                <span class="profile-tag">Firmware</span>
+                <span class="profile-tag">Building real-world systems in automation, AI</span>
+              </div>
+            </div>
+
+            <div class="profile-contact">
+              <span>
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <a href="tel:+917654025369" class="inherit-link">+91-7654025369</a>
+              </span>
+              <span>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:shubhangmishra5@gmail.com" class="inherit-link">shubhangmishra5@gmail.com</a>
+              </span>
+            </div>
+
+            <div class="profile-socials">
+              <a href="https://www.linkedin.com/in/shubhang-mishra-b7b1181b2" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <img src="assets/img/linkedin.png" alt="LinkedIn" class="icon-img" width="18" height="18" />
+              </a>
+              <a href="https://github.com/Shubhangmishra5" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <img src="assets/img/github.png" alt="GitHub" class="icon-img" width="18" height="18" />
+              </a>
+              <a href="https://twitter.com/shubhan48963457" target="_blank" rel="noreferrer" aria-label="Twitter / X">
+                <img src="assets/img/x.png" alt="X / Twitter" class="icon-img" width="18" height="18" />
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS (short) -->
+      <section id="featured">
+        <div class="section-header reveal">
+          <div class="section-kicker">Featured</div>
+          <h2 class="section-title">Recent impact snapshots</h2>
+          <p class="section-subtitle">Problem -> approach -> outcome, kept short. Full details live under Projects.</p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="featured-card reveal">
+            <div class="featured-meta">Firmware &middot; BLE &middot; Zephyr</div>
+            <h3>Sensor platform hardened for field tests</h3>
+            <p>Stabilized acquisition/validation, framed data for dashboards, and added reconnect logic for noisy labs.</p>
+            <p class="featured-impact">Result: fewer corrupt packets and faster field-debug loops.</p>
+            <div class="featured-tags">
+              <span>nRF52840</span><span>Zephyr RTOS</span><span>BLE / GATT</span><span>Reliability</span>
+            </div>
+            <a class="proj-link" href="#portfolio">See full case</a>
+          </article>
+
+          <article class="featured-card reveal">
+            <div class="featured-meta">Tooling &middot; Validation</div>
+            <h3>Provisioning console for device configs</h3>
+            <p>Built a PySide6 app with schema-like checks, serial workflows, and clear error states to cut rework.</p>
+            <p class="featured-impact">Result: reduced provisioning mistakes and rework during bring-up.</p>
+            <div class="featured-tags">
+              <span>PySide6</span><span>Validation</span><span>Serial</span><span>YAML</span>
+            </div>
+            <a class="proj-link" href="#portfolio">See full case</a>
+          </article>
+
+          <article class="featured-card reveal">
+            <div class="featured-meta">Dashboards &middot; Monitoring</div>
+            <h3>Desktop dashboard for sensor trends</h3>
+            <p>Prototype time-series UI with buffered updates, debug views, and operator-friendly layouts.</p>
+            <p class="featured-impact">Result: quicker readouts and fewer missed anomalies during tests.</p>
+            <div class="featured-tags">
+              <span>PyQt5</span><span>Monitoring</span><span>Time-series</span><span>Telemetry</span>
+            </div>
+            <a class="proj-link" href="#portfolio">See full case</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="section-header reveal">
+          <div class="section-kicker">About</div>
+          <h2 class="section-title">Engineer mindset: reliability, clarity, repeatability</h2>
+          <p class="section-subtitle">
+            I enjoy work that connects hardware and software: from circuit-level debugging to firmware
+            to dashboards that make data useful.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="card reveal">
+            <p class="about-summary">
+              I completed my B.Tech in Artificial Intelligence and Machine Learning (ITS Engineering College, 2022-2025) after a diploma in Electrical Engineering.
+              My focus is embedded systems and IoT - building stable platforms, integrating sensors, and creating tooling + automation that helps teams test, configure, and ship faster.
+            </p>
+
+            <div class="pill-row" style="margin-bottom: 0.7rem;">
+              <span>B.Tech | AI &amp; ML | ITS Engineering College (2022-2025)</span>
+              <span>Diploma | Electrical Engineering | Priyadarshini Polytechnic</span>
+            </div>
+
+            <h3 class="subhead">What I'm strong at</h3>
+            <ul class="card-list">
+              <li><strong>Firmware reliability:</strong> structured acquisition -> validation -> transport, with debug-friendly logs and safe fallbacks.</li>
+              <li><strong>Microcontrollers:</strong> nRF52840, STM32, ESP32, Arduino, Raspberry Pi; UART/SPI/I2C integration and debugging.</li>
+              <li><strong>Hardware debugging:</strong> power rails, comms issues, sensor bring-up, board-level verification and iteration.</li>
+              <li><strong>Dashboards/tools:</strong> PySide6/PyQt5/Streamlit apps for monitoring, configuration and ML inference.</li>
+              <li><strong>Automation:</strong> workflow automation for provisioning, validation, and repeatable test steps.</li>
+              <li><strong>Prompt engineering:</strong> reusable templates and integration-ready API patterns for assistant workflows.</li>
+            </ul>
+
+            <div class="callout">
+              <div class="callout-title"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> NDA-safe presentation</div>
+              <p class="callout-text">
+                Some work is confidential. I share it as anonymized summaries (skills + architecture) without disclosing product details, datasets, or code.
+              </p>
+            </div>
+          </div>
+
+          <div class="card card-soft reveal">
+            <h3 class="card-title">Typical workflow</h3>
+            <ul class="card-list">
+              <li>Define system constraints (power, latency, sampling rate, BLE throughput, data integrity).</li>
+              <li>Prototype fast, then harden: error handling, validation, reconnect logic, logging, and test steps.</li>
+              <li>Automate repeatable flows with scripts and dashboards to reduce manual errors.</li>
+              <li>Make it usable: internal tools for config, verification, and live monitoring dashboards.</li>
+              <li>Document decisions so work is repeatable for teams.</li>
+            </ul>
+
+            <hr class="dashed" />
+
+            <h3 class="card-title">Tools I use often</h3>
+            <div class="pill-row">
+              <span>Zephyr RTOS</span><span>nRF Connect / BLE</span><span>Logic analysis mindset</span>
+              <span>Altium</span><span>Git</span><span>Python tooling</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="section-header reveal">
+          <div class="section-kicker">Experience</div>
+          <h2 class="section-title">Hands-on R&amp;D: firmware, hardware, and tooling</h2>
+          <p class="section-subtitle">
+            Roles where I contributed to embedded product development, debugging, and internal tools that improve iteration speed.
+          </p>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Graduate Engineer Trainee &middot; R&amp;D (NPD)</div>
+                <div class="timeline-company">Morphedo Technologies Pvt. Ltd. &middot; Noida</div>
+              </div>
+              <div class="timeline-date">Jun 2025 - Present</div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Zephyr &middot; nRF52840</span>
+              <span class="tag">BLE &middot; GATT</span>
+              <span class="tag">Sensors</span>
+              <span class="tag">Dashboards</span>
+              <span class="tag">Hardware Debug</span>
+            </div>
+            <ul class="card-list">
+              <li>Owned embedded pipelines end-to-end (acquisition -> validation -> transport) and BLE integration for sensor devices.</li>
+              <li>Built/maintained internal dashboards, provisioning tools, and automation scripts; reduced bring-up/validation time for new boards.</li>
+              <li>Ran hardware integration/debug sessions (power/comms/sensor issues) and documented repeatable checks for the team.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Trainee Engineer</div>
+                <div class="timeline-company">Satyam Software Solution Pvt. Ltd. &middot; Noida</div>
+              </div>
+              <div class="timeline-date">Dec 2024 - Feb 2025</div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Altium</span>
+              <span class="tag">Circuit Design</span>
+              <span class="tag">PCB</span>
+              <span class="tag">Debug</span>
+            </div>
+            <ul class="card-list">
+              <li>Designed circuits and PCBs in Altium; focused on clean documentation and review-ready outputs.</li>
+              <li>Debugged R&amp;D hardware issues (power, comms, component faults) to cut rework cycles.</li>
+              <li>Standardized bring-up checks: rails/IO, comms validation, and structured fault isolation.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Project Intern</div>
+                <div class="timeline-company">NewGen IEDC &middot; Greater Noida</div>
+              </div>
+              <div class="timeline-date">Jan 2024 - Nov 2024</div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">IoT</span>
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Team Leadership</span>
+            </div>
+            <ul class="card-list">
+              <li>Led prototype teams building IoT demos and electronics integrations with measurable stability improvements.</li>
+              <li>Standardized wiring, sensor integration, and test steps to reduce last-minute failures during demos.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="section-header reveal">
+          <div class="section-kicker">Skills</div>
+          <h2 class="section-title">Tech stack &amp; tooling</h2>
+          <p class="section-subtitle">
+            Embedded + AI generalist: firmware, hardware, ML, prompt engineering, and automation that ship together.
+          </p>
+        </div>
+
+        <div class="card card-soft skills-grid reveal">
+          <div class="skills-group">
+            <h4>Programming</h4>
+            <div class="skills-items">
+              <span>C</span><span>C++</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Embedded &amp; IoT</h4>
+            <div class="skills-items">
+              <span>nRF52840</span><span>Zephyr RTOS</span><span>BLE &middot; GATT</span><span>STM32</span><span>ESP32</span><span>Raspberry Pi</span><span>Arduino</span>
+              <span>UART</span><span>SPI</span><span>I2C</span><span>ADC / analog interfaces</span><span>MQTT</span><span>Modbus</span><span>RS-485</span><span>CAN</span><span>USB</span>
+              <span>Sensors &amp; Actuators</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Hardware</h4>
+            <div class="skills-items">
+              <span>Hardware Debugging</span><span>J-Link</span><span>Oscilloscope</span><span>Circuit Design</span><span>PCB Prototyping</span><span>Altium Designer</span><span>BMS</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>AI / ML / Automation</h4>
+            <div class="skills-items">
+              <span>Prompt Engineering &amp; Evaluation</span><span>API Integration</span><span>Safety / Guardrails</span><span>Rate Limiting</span>
+              <span>Machine Learning</span><span>scikit-learn</span><span>TensorFlow</span><span>PyTorch</span>
+              <span>Time-series</span><span>Feature Engineering</span>
+              <span>AI Automation</span><span>Workflow Automation</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Dashboards &amp; UI</h4>
+            <div class="skills-items">
+              <span>PySide6</span><span>PyQt5</span><span>Streamlit</span><span>Matplotlib</span>
+              <span>Next.js</span><span>HTML</span><span>CSS</span><span>QSS</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Tools &amp; Practices</h4>
+            <div class="skills-items">
+              <span>Git &amp; GitHub</span><span>Linux</span><span>Docker</span><span>Automation Scripts</span>
+              <span>Validation</span><span>Logging</span><span>Debug Workflows</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section id="highlights">
+        <div class="section-header reveal">
+          <div class="section-kicker">Highlights</div>
+          <h2 class="section-title">Achievements &amp; leadership</h2>
+          <p class="section-subtitle">Competitive events, representation, and community contributions.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="card reveal">
+            <h3 class="card-title">Achievements</h3>
+            <ul class="achievements-list">
+              <li>Finalist at Electrothon 6.0 (NIT Hamirpur, 2024); winner of Orkes Challenge and Scavenger Hunt.</li>
+              <li>Top 15 in Hackaccino (Bennett University, 2024) for an embedded/IoT build.</li>
+              <li>Represented BigBlare Innovation at the UP International Trade Show 2024 (technical lead).</li>
+            </ul>
+
+            <hr class="dashed" />
+
+            <h3 class="card-title">Strength signals</h3>
+            <ul class="card-list">
+              <li>Comfortable taking prototypes to stable demos: structured debugging, validation, and reconnect logic.</li>
+              <li>Explains systems clearly (hardware -> firmware -> data -> tooling) for cross-functional teams.</li>
+              <li>Regularly present technical work to stakeholders and handle NDA-safe walkthroughs.</li>
+            </ul>
+          </div>
+
+          <div class="card card-soft reveal">
+            <h3 class="card-title">Leadership &amp; volunteering</h3>
+            <p class="card-meta">Organiser &middot; IDEATHON 2024 &middot; NewGen IEDC</p>
+            <p class="muted">
+              Organized IDEATHON 2024, helping teams convert early-stage ideas into workable prototypes and improve demo reliability.
+            </p>
+
+            <hr class="dashed" />
+
+            <h3 class="card-title">What I'm looking for</h3>
+            <ul class="card-list">
+              <li>Embedded firmware roles (Zephyr / nRF52 / STM32) and BLE sensor platforms.</li>
+              <li>Hardware + firmware integration and debugging-heavy environments.</li>
+              <li>Tooling + dashboards that accelerate product and validation cycles.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- HACKATHONS -->
+      <section id="hackathons">
+        <div class="section-header reveal">
+          <div class="section-kicker">Hackathons</div>
+          <h2 class="section-title">Hackathons &amp; certificates</h2>
+          <p class="section-subtitle">
+            Participated in 4-5 hackathons across embedded and IoT. Each entry links to a LinkedIn recap or certificate.
+          </p>
+        </div>
+
+        <div class="hackathon-grid">
+          <div class="hackathon-list">
+            <article class="card hackathon-card reveal">
+              <div class="hackathon-header">
+                <div>
+                  <h3 class="hackathon-title">Electrothon 6.0</h3>
+                  <p class="hackathon-meta">NIT Hamirpur &middot; 2024 &middot; Finalist</p>
+                </div>
+                <span class="hackathon-badge">Embedded</span>
+              </div>
+              <p class="hackathon-desc">
+                Built an embedded/IoT prototype with a demo-ready validation flow and rapid iteration cycles.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Embedded</span><span class="tag">IoT</span><span class="tag">Rapid prototyping</span>
+              </div>
+              <div class="hackathon-links">
+                <a class="proj-link" href="https://www.linkedin.com/posts/shubhangmishra5_electrothon-hackathon-innovationjourney-activity-7185695532462309377-UsZv?utm_source=share&utm_medium=member_desktop&rcm=ACoAADF-uY8BpFwkowkZ2TDPGNzVBLuX_bcYvaI" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn recap
+                </a>
+              </div>
+            </article>
+
+            <article class="card hackathon-card reveal">
+              <div class="hackathon-header">
+                <div>
+                  <h3 class="hackathon-title">Hackaccino</h3>
+                  <p class="hackathon-meta">Bennett University &middot; 2024 &middot; Top 15</p>
+                </div>
+                <span class="hackathon-badge">IoT</span>
+              </div>
+              <p class="hackathon-desc">
+                Delivered a stable IoT demo with clear telemetry, quick fault isolation, and team coordination under time pressure.
+              </p>
+              <div class="tag-row">
+                <span class="tag">IoT</span><span class="tag">Telemetry</span><span class="tag">Teamwork</span>
+              </div>
+              <div class="hackathon-links">
+                <a class="proj-link" href="https://www.linkedin.com/posts/shubhangmishra5_hackaccino-caffeinateyourcode-bennettuniversity-activity-7186462947806711809-edq4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADF-uY8BpFwkowkZ2TDPGNzVBLuX_bcYvaI" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn recap
+                </a>
+              </div>
+            </article>
+
+
+            <article class="card hackathon-card reveal">
+              <div class="hackathon-header">
+                <div>
+                  <h3 class="hackathon-title">Innocodeathon</h3>
+                  <p class="hackathon-meta"> ITS Engineering College, Greater Noida &middot; 2025 &middot; </p>
+                </div>
+                <span class="hackathon-badge">IoT</span>
+              </div>
+              <p class="hackathon-desc">
+                project combines the power of hardware, software, and nature to develop a groundbreaking solution - an algae-based oxygen generator.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Breathe Green</span><span class="tag">IoT</span><span class="tag">From CO₂ to O₂</span>
+              </div>
+              <div class="hackathon-links">
+                <a class="proj-link" href="https://www.linkedin.com/posts/shubhangmishra5_innocodeathon-innovation-techforgood-activity-7196617101745254401-Wlfn?utm_source=share&utm_medium=member_desktop&rcm=ACoAADF-uY8BpFwkowkZ2TDPGNzVBLuX_bcYvaI" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn recap
+                </a>
+              </div>
+            </article>
+
+            <article class="card hackathon-card reveal">
+              <div class="hackathon-header">
+                <div>
+                  <h3 class="hackathon-title">HACKED</h3>
+                  <p class="hackathon-meta">BML Munjal University &middot; 2025 &middot;</p>
+                </div>
+                <span class="hackathon-badge">Automation</span>
+              </div>
+              <p class="hackathon-desc">
+              </p>
+              <div class="tag-row">
+                <span class="tag">Automation</span><span class="tag">IoT</span><span class="tag">Web Dev</span>
+              </div>
+              <div class="hackathon-links">
+                <a class="proj-link" href="https://www.linkedin.com/posts/shubhangmishra5_hackathon-activity-7184460035400372225-jzTj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADF-uY8BpFwkowkZ2TDPGNzVBLuX_bcYvaI" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn recap
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="card card-soft reveal">
+            <h3 class="card-title">Certificates</h3>
+            <p class="muted"></p>
+
+            <ul class="cert-list">
+              <li class="cert-item">
+                <div class="cert-details">
+                  <div class="cert-title">AWS Academy Graduate - Cloud Foundations - Training Badge</div>
+                  <div class="cert-meta">AWS &middot; 2023</div>
+                </div>
+                <a class="proj-link" href="https://www.credly.com/badges/a3163f4e-1eb6-4458-aef5-6e759cb51c60/linked_in_profile" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i> View
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="portfolio">
+        <div class="section-header reveal">
+          <div class="section-kicker">Projects</div>
+          <h2 class="section-title">Selected work (public + NDA-safe summaries)</h2>
+          <p class="section-subtitle">
+            Confidential projects are presented as anonymized summaries. NDA projects are ongoing in my current role; details are withheld. Public links are shared on request. Featured above highlights outcomes; here I focus on scope and stack.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal confidential">
+            <div class="project-media">
+              <img
+                src="assets/img/hero-embedded.gif"
+                alt="Abstract embedded systems illustration"
+                loading="lazy"
+                width="1200"
+                height="630"
+              />
+            </div>
+            <div class="project-body">
+              <div class="title-row">
+                <h3 class="project-title">Confidential Health-Tech Sensor Platform</h3>
+                <span class="badge-confidential"><i class="fa-solid fa-lock" aria-hidden="true"></i> NDA</span>
+              </div>
+              <p class="project-meta">nRF52840 &middot; Zephyr RTOS &middot; BLE (GATT) &middot; Sensors &middot; Python Tools &middot; Ongoing (current role)</p>
+              <p class="project-desc">
+                End-to-end work across firmware pipelines, BLE transport, and engineering dashboards. Details withheld under NDA.
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Implemented sensor acquisition and feature framing with validation checks to reduce corrupt packets.</li>
+                <li>Designed reconnect/error-handling strategies for stable field/lab usage.</li>
+                <li>Built internal monitoring views to debug trends and device state quickly.</li>
+                <li><strong>Result:</strong> fewer field regressions and faster issue isolation during lab testing.</li>
+              </ul>
+              <div class="project-figure">
+                <img
+                  src="assets/img/end-to-end-ml-architecture.svg"
+                  alt="Sanitized end-to-end architecture for the health-tech platform: ingestion, preprocessing, inference, dashboard, and training pipeline"
+                  width="1400"
+                  height="520"
+                  loading="lazy"
+                />
+                <p class="project-figure-caption">Sanitized end-to-end architecture overview (NDA-safe).</p>
+              </div>
+              <div class="project-tags">
+                <span>Zephyr</span><span>BLE &middot; GATT</span><span>Reliability</span><span>Tooling</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="mailto:shubhangmishra5@gmail.com?subject=Portfolio%20NDA%20Walkthrough%20Request%20-%20Health-Tech%20Sensor%20Platform">
+                  <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i> Request an NDA-safe walkthrough
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal confidential">
+            <div class="project-media">
+              <img
+                src="assets/img/hero-embedded.gif"
+                alt="Provisioning and configuration workflow illustration"
+                loading="lazy"
+                width="1200"
+                height="630"
+              />
+            </div>
+            <div class="project-body">
+              <div class="title-row">
+                <h3 class="project-title">Internal Device Provisioning & Config Console</h3>
+                <span class="badge-confidential"><i class="fa-solid fa-lock" aria-hidden="true"></i> NDA</span>
+              </div>
+              <p class="project-meta">Python &middot; PySide6 &middot; YAML &middot; Serial Workflows &middot; Ongoing (current role)</p>
+              <p class="project-desc">
+                A production-style internal tool to configure and verify devices. Details withheld under NDA.
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Implemented step-based flows with clear error states and safe failure handling.</li>
+                <li>Added schema-like validation and consistency checks for configuration correctness.</li>
+                <li>Integrated robust serial patterns for programming and verification loops.</li>
+                <li><strong>Result:</strong> fewer provisioning errors and more repeatable board acceptance.</li>
+              </ul>
+              <div class="project-figure">
+                <img
+                  src="assets/img/end-to-end-architecture.svg"
+                  alt="End-to-end provisioning pipeline diagram: device firmware, serial provisioning console, validation checks, and report output"
+                  width="1200"
+                  height="520"
+                  loading="lazy"
+                />
+                <p class="project-figure-caption">End-to-end provisioning pipeline used for this internal console.</p>
+              </div>
+              <div class="project-tags">
+                <span>PySide6</span><span>Validation</span><span>Provisioning</span><span>Serial</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="mailto:shubhangmishra5@gmail.com?subject=Portfolio%20NDA%20Walkthrough%20Request%20-%20Device%20Provisioning%20Console">
+                  <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i> Request an NDA-safe walkthrough
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal confidential">
+            <div class="project-media">
+              Desktop monitoring dashboard prototype: trends, summaries, and update loops for sensor streams.
+            </div>
+            <div class="project-body">
+              <div class="title-row">
+                <h3 class="project-title">Confidential Monitoring Dashboard (Desktop Prototype)</h3>
+                <span class="badge-confidential"><i class="fa-solid fa-lock" aria-hidden="true"></i> NDA</span>
+              </div>
+              <p class="project-meta">Python &middot; PyQt5 &middot; Matplotlib &middot; Time-series &middot; Ongoing (current role)</p>
+              <p class="project-desc">
+                A prototype UI for sensor monitoring and trend visualization. Details withheld under NDA.
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Designed readable time-series views with update timers and buffering concepts.</li>
+                <li>Built UI layouts that prioritize quick interpretation during testing.</li>
+                <li>Implemented structured parsing and error handling for cleaner updates.</li>
+                <li><strong>Result:</strong> faster debugging cycles for test sessions.</li>
+              </ul>
+              <div class="project-tags">
+                <span>PyQt5</span><span>Monitoring</span><span>Time-series</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="mailto:shubhangmishra5@gmail.com?subject=Portfolio%20NDA%20Walkthrough%20Request%20-%20Monitoring%20Dashboard%20Prototype">
+                  <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i> Request an NDA-safe walkthrough
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img
+                src="assets/img/QRCode_generator_display.PNG"
+                alt="QR Code Generator web app display"
+                loading="lazy"
+                width="1200"
+                height="630"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">QR Code Generator Web App</h3>
+              <p class="project-meta">HTML &middot; CSS &middot; JavaScript &middot; Web Share API</p>
+              <p class="project-desc">
+                Single-page web app to generate custom-colored QR codes from text/URLs with preview, download, and share. Public link available on request.
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Clean UI with instant preview and download workflow.</li>
+                <li>Web Share API support on compatible browsers.</li>
+                <li><strong>Result:</strong> frictionless generation flow with a fast preview loop.</li>
+              </ul>
+              <div class="project-tags">
+                <span>JavaScript</span><span>Front-end</span><span>Web APIs</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="https://github.com/Shubhangmishra5/QR_Generator">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> View GitHub repo
+                </a>
+                <a class="proj-link" href="https://qr-generator-beta-liard.vercel.app/">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live demo (add link)
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img
+                src="assets/img/PromptGen_display.PNG"
+                alt="PromptGen prompt engineering workspace preview"
+                loading="lazy"
+                width="1200"
+                height="630"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">PromptGen - Prompt Engineering Workspace</h3>
+              <p class="project-meta">Next.js &middot; TypeScript &middot; Gemini API &middot; SaaS UI</p>
+              <p class="project-desc">
+                A prompt engineering workspace that standardizes high-quality prompts with templates, personas, constraints, and structured previews. Built for consistent outputs and team reuse.
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Template library (blog, marketing, coding, startup, resume) with persona/audience/context controls.</li>
+                <li>Continuity mode + local history for coherent follow-ups and fast reuse.</li>
+                <li>Secure Next.js API route for Gemini with validation, timeouts, and basic rate limiting.</li>
+                <li><strong>Result:</strong> consistent prompt quality and faster iteration for teams.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Next.js</span><span>TypeScript</span><span>Gemini</span><span>Prompt Engineering</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="https://github.com/Shubhangmishra5/promptgen">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub repo (add link)
+                </a>
+                <a class="proj-link" href="https://promptgen-ymfb.vercel.app/">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live demo (add link)
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              Motor-control prototype with real-time UI to visualize and tune telemetry.
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Motor Control + Real-time GUI Prototype</h3>
+              <p class="project-meta">Raspberry Pi &middot; STM32 &middot; Python &middot; Pygame</p>
+              <p class="project-desc">
+                Prototype system controlling motors with a GUI for monitoring and tuning during testing.
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Real-time status visualization (telemetry + operating mode).</li>
+                <li>Designed UI flow for quick validation during hardware tests.</li>
+                <li><strong>Result:</strong> quicker tuning during bench tests.</li>
+              </ul>
+              <div class="project-tags">
+                <span>STM32</span><span>Raspberry Pi</span><span>Real-time UI</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="https://github.com/Shubhangmishra5/accelerator_enhancer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> View GitHub repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              IoT monitoring prototype integrating sensing + MQTT telemetry for remote observability.
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">IoT Monitoring Prototype</h3>
+              <p class="project-meta">Raspberry Pi &middot; Python &middot; MQTT &middot; Sensors</p>
+              <p class="project-desc">
+                project demonstrates how to control a Delta VFD EL (Variable Frequency Drive) using a Raspberry Pi through RJ45 using the Modbus communication protocol
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Sensor integration + structured telemetry publishing.</li>
+                <li>Focused on stability, readable metrics, and reconnect behavior.</li>
+                <li><strong>Result:</strong> More reliable telemetry during long runs.</li>
+              </ul>
+              <div class="project-tags">
+                <span>IoT</span><span>MQTT</span><span>Raspberry Pi</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="https://github.com/Shubhangmishra5/vfd_modbus">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> View GitHub repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              Microalgae oxygen generator prototype with sensing and dashboard-style monitoring.
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Oxygen Generator (Microalgae) - Monitoring Prototype</h3>
+              <p class="project-meta">ESP32 &middot; Sensors &middot; Telemetry &middot; Dashboards</p>
+              <p class="project-desc">
+                Prototype for environmental monitoring with multiple sensors and remote visualization.
+              </p>
+              <ul class="card-list" style="margin-top: 0.2rem;">
+                <li>Integrated sensors and published readings for visualization.</li>
+                <li>Implemented basic validation and fault handling for cleaner logs.</li>
+                <li><strong>Result:</strong> Monitoring Oxygen and CO₂ levels in real-time in custom web dashboard.</li>
+              </ul>
+              <div class="project-tags">
+                <span>ESP32</span><span>Sensors</span><span>Telemetry</span>
+              </div>
+              <div class="project-links">
+                <a class="proj-link" href="https://www.linkedin.com/posts/shubhangmishra5_innocodeathon-innovation-techforgood-activity-7196617101745254401-Wlfn?utm_source=share&utm_medium=member_desktop&rcm=ACoAADF-uY8BpFwkowkZ2TDPGNzVBLuX_bcYvaI">
+                  <i class="fa-solid fa-link" aria-hidden="true"></i> Linkedin
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES -->
+      <section id="case-studies">
+        <div class="section-header reveal">
+          <div class="section-kicker">Case Studies</div>
+          <h2 class="section-title">How I build: architecture, constraints, validation</h2>
+          <p class="section-subtitle">
+            NDA-safe breakdowns focusing on engineering decisions, reliability patterns, and tooling.
+          </p>
+        </div>
+
+        <div class="case-grid reveal">
+          <details class="case-card" open>
+            <summary>
+              <span class="case-title">Embedded + BLE pipeline (Zephyr on nRF52840)</span>
+              <span class="case-badge">Firmware &middot; BLE &middot; Sensors</span>
+            </summary>
+            <div class="case-body">
+              <ul class="card-list">
+                <li><strong>Goal:</strong> stable sensor acquisition and BLE streaming suitable for dashboards and analysis.</li>
+                <li><strong>Constraints:</strong> battery life, BLE throughput, and consistent sampling under noisy lab conditions.</li>
+                <li><strong>Approach:</strong> acquisition -> validation -> framing -> custom GATT service.</li>
+                <li><strong>Reliability:</strong> reconnect strategy, input checks, safe defaults, debug logs.</li>
+                <li><strong>Result:</strong> fewer data dropouts and faster issue isolation during bring-up.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="case-card" open>
+            <summary>
+              <span class="case-title">Hardware bring-up & debugging workflow</span>
+              <span class="case-badge">Hardware &middot; PCB</span>
+            </summary>
+            <div class="case-body">
+              <ul class="card-list">
+                <li><strong>Work:</strong> circuit design reviews, PCB prototyping, bring-up scripts, and fixture planning for repeatable tests.</li>
+                <li><strong>Constraints:</strong> mixed-signal noise, tight power budgets, and short iteration cycles.</li>
+                <li><strong>Checks:</strong> rails/IO/comms health, sensor sanity runs, thermal touchpoints, and calibration sanity passes.</li>
+                <li><strong>Debug kit:</strong> logic-analyzer captures, boundary/smoke tests, and fault isolation steps logged per board.</li>
+                <li><strong>Result:</strong> fewer "random" failures, faster acceptance, and cleaner handoff notes for firmware teams.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="case-card" open>
+            <summary>
+              <span class="case-title">LLM prompt design + API integration patterns</span>
+              <span class="case-badge">Prompt Engineering &middot; Integration</span>
+            </summary>
+            <div class="case-body">
+              <ul class="card-list">
+                <li><strong>Work:</strong> prompt design + reusable templates, plus API wrappers that enforce structured inputs/outputs.</li>
+                <li><strong>Constraints:</strong> latency, cost per call, and variability across model versions/providers.</li>
+                <li><strong>Guardrails:</strong> validation layers, graceful fallbacks on provider errors, and user-friendly error copy.</li>
+                <li><strong>Tooling:</strong> logging hooks for prompt/version tracking and rapid A/B tweaks without code changes.</li>
+                <li><strong>Result:</strong> predictable assistant behavior and faster iteration for product teams.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume">
+        <div class="section-header reveal">
+          <div class="section-kicker">Resume</div>
+          <h2 class="section-title">Full professional profile</h2>
+          <p class="section-subtitle">
+            View or download my detailed resume including education, experience, projects, and achievements.
+          </p>
+        </div>
+
+        <div class="card resume-card reveal">
+          <div class="resume-actions">
+            <a href="./Shubhang_Mishra_Resume.pdf" class="btn-primary" target="_blank" rel="noreferrer">
+              <img src="assets/img/resume.png" alt="Resume icon" class="icon-img" width="18" height="18" />
+              View / Download Resume (PDF)
+            </a>
+            <a href="#contact" class="btn-ghost">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              Contact for collaborations
+            </a>
+          </div>
+
+          <p class="resume-note">
+            Resume available as a downloadable PDF.
+          </p>
+
+          <div class="resume-preview" aria-label="Resume preview">
+            <object data="./Shubhang_Mishra_Resume.pdf" type="application/pdf" class="resume-embed">
+              <p class="muted">Inline preview not supported here. <a href="./Shubhang_Mishra_Resume.pdf" target="_blank" rel="noreferrer">Open the PDF</a>.</p>
+            </object>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS / SOCIAL PROOF -->
+      <section id="testimonials">
+        <div class="section-header reveal">
+          <div class="section-kicker">Social proof</div>
+          <h2 class="section-title">How I work with teams</h2>
+          <p class="section-subtitle">Clear communication, repeatable validation, and tools that reduce rework.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <p class="testimonial-quote">Reliability-first delivery with clear acceptance criteria.</p>
+            <div class="testimonial-meta">
+              <span class="testimonial-name">Validation</span>
+              <span class="testimonial-role">Define checks early so bring-up is repeatable and measurable.</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p class="testimonial-quote">Tools that reduce manual steps and speed debugging.</p>
+            <div class="testimonial-meta">
+              <span class="testimonial-name">Tooling</span>
+              <span class="testimonial-role">Dashboards + scripts that compress feedback cycles.</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p class="testimonial-quote">Documentation that makes handoffs smooth.</p>
+            <div class="testimonial-meta">
+              <span class="testimonial-name">Communication</span>
+              <span class="testimonial-role">Concise notes so teams can reproduce and fix issues fast.</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="logo-row" aria-label="Teams I've helped">
+          <span class="logo-pill">Morphedo Technologies</span>
+          <span class="logo-pill">Satyam Software Solutions</span>
+          <span class="logo-pill">NewGen IEDC</span>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="section-header reveal">
+          <div class="section-kicker">Contact</div>
+          <h2 class="section-title">Let's build something together</h2>
+          <p class="section-subtitle">
+            For embedded firmware, BLE sensor platforms, hardware design/debug, dashboards, or AI tooling - reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card card-soft contact-details reveal">
+            <p><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Greater Noida, Uttar Pradesh, India &middot; 201301</span></p>
+            <p><span><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+917654025369">+91-7654025369</a></span></p>
+            <p><span><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:shubhangmishra5@gmail.com">shubhangmishra5@gmail.com</a></span></p>
+            <p>
+              <span><i class="fa-brands fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/Shubhangmishra5" target="_blank" rel="noreferrer">github.com/Shubhangmishra5</a>
+              </span>
+            </p>
+            <p>
+              <span><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                <a href="https://www.linkedin.com/in/shubhang-mishra-b7b1181b2" target="_blank" rel="noreferrer">linkedin.com/in/shubhang-mishra-b7b1181b2</a>
+              </span>
+            </p>
+            <p>
+              <span><i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                <a href="https://twitter.com/shubhan48963457" target="_blank" rel="noreferrer">@shubhan48963457</a>
+              </span>
+            </p>
+
+            <p class="muted">Open to full-time and contract roles, remote or hybrid. India or global teams welcome.</p>
+            <p class="muted">Replies typically within 24-48 hours.</p>
+            <p class="muted">If you want case studies or repo access, mention it in your message.</p>
+
+            <p class="form-note">
+              For quick responses, email is preferred.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <form id="contact-form" data-endpoint="">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-submit">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                Send message
+              </button>
+              <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>&copy; <span id="year"></span> Shubhang Mishra | Embedded & IoT Engineer. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="#home">Back to top</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
